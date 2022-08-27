@@ -16,4 +16,5 @@ the file with the following command `wl-paste -w bash -c "wl-paste > clipboard.t
 
 [ ] Currently I am not satisfied with the perfomance. A possible to improvement
 would be ReadFile to be async. But I wish to rewrite this in rust someday
+
 [ ] Add a gif to the readme to demenostrate how it works
