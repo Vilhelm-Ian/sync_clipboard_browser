@@ -13,5 +13,9 @@ server.listen(3000, () => {
 });
 
 fs.watchFile("./clipboard.txt", (curr, prev) => {
-  console.log(` file Changed`);
+  console.log(` file Changed,`);
+  console.log(
+    "The contents of the current file are:",
+    fs.readFileSync("clipboard.txt", "utf8")
+  );
 });
