@@ -1,4 +1,4 @@
-![https://github.com/Vilhelm-Ian/sync_clipboard_browser/blob/main/gif.gif](alt text)
+![alt text](https://github.com/Vilhelm-Ian/sync_clipboard_browser/blob/main/gif.gif)
 # Why I created this
 
 I wanted to use mpvacious feature to paste text coppied to clipboard to appear
