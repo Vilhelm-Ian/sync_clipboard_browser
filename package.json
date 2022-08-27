@@ -1,0 +1,19 @@
+{
+  "name": "sync_clipboard_browser",
+  "version": "1.0.0",
+  "description": "a local server that will display in real time the file changes to a file that takes in clipboard entries as input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "immersion",
+    "clipboard"
+  ],
+  "author": "Vilhelm-Ian",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}
