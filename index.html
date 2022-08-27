@@ -1,5 +1,7 @@
 <html>
-	<head> </head>
+	<head>
+		Clipboard
+	</head>
 	<body>
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
@@ -7,7 +9,7 @@
 			socket.on("paste", (text) => {
 				console.log("pasting: " + text);
 				text = text.split("\n");
-				text = text.reduce((current, item) => (current += `<ul>${item}</ul>`));
+				text = text.reduce((current, item) => (current += `<li>${item}</li>`));
 				document.getElementById("clipboard").innerHTML = text;
 			});
 		</script>
