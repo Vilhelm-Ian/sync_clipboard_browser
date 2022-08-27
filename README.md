@@ -1,3 +1,4 @@
+![https://github.com/Vilhelm-Ian/sync_clipboard_browser/blob/main/gif.gif](alt text)
 # Why I created this
 
 I wanted to use mpvacious feature to paste text coppied to clipboard to appear
@@ -16,5 +17,3 @@ the file with the following command `wl-paste -w bash -c "wl-paste > clipboard.t
 
 [ ] Currently I am not satisfied with the perfomance. A possible improvement
 would be ReadFile to be async. But I wish to rewrite this in rust someday
-
-[ ] Add a gif to the readme to demenostrate how it works
