@@ -20,8 +20,5 @@ io.on("connection", (socket) => {
 
 fs.watchFile("./clipboard.txt", (curr, prev) => {
   console.log(` file Changed,`);
-  console.log(
-    "The contents of the current file are:",
-    fs.readFileSync("clipboard.txt", "utf8")
-  );
+  io.emit("paste", fs.readFileSync("clipboard.txt", "utf8"));
 });

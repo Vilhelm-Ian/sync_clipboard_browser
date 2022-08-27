@@ -4,6 +4,16 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 			var socket = io();
+			socket.on("paste", (text) => {
+				console.log("pasting: " + text);
+				text = text.split("\n");
+				text = text.reduce((current, item) => (current += `<ul>${item}</ul>`));
+				document.getElementById("clipboard").innerHTML = text;
+			});
 		</script>
+		<div>
+			Clipboard contents:
+			<ul id="clipboard"></ul>
+		</div>
 	</body>
 </html>
